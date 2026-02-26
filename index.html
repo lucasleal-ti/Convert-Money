@@ -9,11 +9,54 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Convert Money</title>
 </head>
 
 <body>
+    <img class="logo" src="./assets/Gif.gif" alt="gif-money">
+
+    <main>
+        <label>
+            Converter de <b> :</b>
+            <select>
+                <option>R$ Real Brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+            Converter para <b> :</b>
+            <select class="currency-select">
+                <option value="dolar">US$ Dolar Americano</option>
+                <option value="euro">€ Euro</option>
+            </select>
+        </label>
+
+        <label>
+            Valor
+            <input class="input-currency" placeholder="1.000,00">
+        </label>
+
+        <button class="convert-button">Converter</button>
+
+        <section>
+            <div class="currency-box">
+                <img src="./assets/Real.png" alt="logo-moeda-a-converter">
+                <p class="currency">Real</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>
+            </div>
+
+            <img class="arrow-img" src="./assets/arrow.png" alt="seta-conversao">
+
+            <div class="currency-box">
+                <img class="currency-image" src="./assets/Dolar.png" alt="logo-moeda-a-convertida">
+                <p class="currency" id="currency-name">Dólar Americano </p>
+                <p class="currency-value">US$ 0.0</p>
+            </div>
+        </section>
+    </main>
 
 </body>
+<script src="./scripts.js"></script>
 
 </html>
